@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn3;
     Button midbtn;
     Button prefinalbtn;
+    Button passing_intents;
 
 
 
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btn3 = findViewById(R.id.btn3);
         midbtn = findViewById(R.id.midbtn);
         prefinalbtn = findViewById(R.id.prefibtn);
+        passing_intents = findViewById(R.id.btnpass);
 
         btn1.setOnClickListener(view -> {
             Intent intent1 = new Intent(
@@ -74,6 +76,16 @@ public class MainActivity extends AppCompatActivity {
                        match3.class);
                 Toast.makeText(MainActivity.this, "Sullano, Dechie A. - Opening Match 3...", Toast.LENGTH_SHORT).show();
                 startActivity(intent5);
+            }
+        });
+
+        passing_intents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent6 = new Intent(
+                        MainActivity.this,
+                        activity_passing_intents_exercise.class);
+                startActivity(intent6);
             }
         });
 

@@ -9,19 +9,19 @@
     <Button
         android:id="@+id/btn1"
         android:layout_width="192dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="128dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
         android:text="Layout Exercise"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="192dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:text="Button Exercise"
         app:layout_constraintEnd_toEndOf="@+id/btn1"
         app:layout_constraintStart_toStartOf="@+id/btn1"
@@ -30,8 +30,8 @@
     <Button
         android:id="@+id/btn3"
         android:layout_width="192dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:text="Calculator Exercise"
         app:layout_constraintEnd_toEndOf="@+id/btn2"
         app:layout_constraintStart_toStartOf="@+id/btn2"
@@ -40,8 +40,8 @@
     <Button
         android:id="@+id/midbtn"
         android:layout_width="192dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:text="MIDTERM EXAM"
         app:layout_constraintEnd_toEndOf="@+id/btn3"
         app:layout_constraintStart_toStartOf="@+id/btn3"
@@ -65,14 +65,44 @@
     <Button
         android:id="@+id/prefibtn"
         android:layout_width="192dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="40dp"
-        android:text="PREFI ACTIVITY"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="match 3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/midbtn"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnpass"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/btnPassingIntents"
+        app:layout_constraintEnd_toEndOf="@+id/prefibtn"
+        app:layout_constraintStart_toStartOf="@+id/prefibtn"
+        app:layout_constraintTop_toBottomOf="@+id/prefibtn" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Fragments"
+        app:layout_constraintEnd_toEndOf="@+id/btnpass"
+        app:layout_constraintStart_toStartOf="@+id/btnpass"
+        app:layout_constraintTop_toBottomOf="@+id/btnpass" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="menus"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
